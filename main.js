@@ -30,9 +30,10 @@ const ipcMain = electron.ipcMain;
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-import fs  from 'fs';
-import path from 'path';
-import {enableLiveReload} from 'electron-compile';
+
+var fs= require('fs');
+var path = require('path');
+// import {enableLiveReload} from 'electron-compile';
 
 var defaultConfig = path.join(__dirname, './config.json')
 var ownConfig = path.join(__dirname, './my.config.json')
@@ -45,11 +46,12 @@ const showDevTools = config.init.showDevTools !== undefined ? config.init.showDe
 
 if (showDevTools) {
   // enable live reload
-
-  enableLiveReload();
+ // electron-compile is deprecated
+  // enableLiveReload();
 }
 
 function createWindow () {
+  console.log("Create Window");
   var fullscreen = config.init.fullscreen !== undefined ? config.init.fullscreen:true;
 
   var width;
