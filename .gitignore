@@ -4,6 +4,8 @@ compileCache*/
 webapp/photos/*
 webapp/photos
 npm-debug.log
+parcel-cache
+dist
 coverimage.png
 *.jpg
 *.jpeg
