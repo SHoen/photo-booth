@@ -38,10 +38,11 @@ import {
   SharpErrorPrompt
 } from "./prompt.js";
 import slideshow from "./slideshow.js";
+import * as electron from 'electron';
 
 import webApp from './webapp_server.js';
 
-const {getCurrentWindow, globalShortcut} = require('electron').remote;
+const {getCurrentWindow, globalShortcut} = electron.remote;
 
 let livePreview;
 

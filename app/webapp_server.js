@@ -27,6 +27,7 @@ import templateService from './template-service.js';
 import translationService from './translation-service.js';
 import collage from './collage.js';
 import printer from './printer.js';
+import * as electron from 'electron';
 
 var port = 8080;
 
@@ -47,7 +48,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
-var remote = require('electron').remote;
+var remote = electron.remote;
 
 server.listen(port, function () {
 	console.log('webapp: listening at port %d', port);
