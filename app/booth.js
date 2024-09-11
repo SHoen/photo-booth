@@ -23,7 +23,7 @@ import 'util';
 
 import $ from 'jquery';
 
-import 'popper.js';
+// import 'popper.js';
 import 'bootstrap';
 
 import utils from "./utils.js";

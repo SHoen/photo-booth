@@ -22,10 +22,7 @@ import fs from 'fs';
 import sharp from 'sharp';
 
 import utils from "./utils.js";
-
-const gphoto2 = utils.getConfig().gphoto2.simulate
-	? null
-	: require('gphoto2');
+import gphoto2 from 'gphoto2';
 
 class Camera {
 

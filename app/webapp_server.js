@@ -28,7 +28,7 @@ import translationService from './translation-service.js';
 import collage from './collage.js';
 import printer from './printer.js';
 
-var port = 80;
+var port = 8080;
 
 process.on('uncaughtException', function(err) {
     if (err.errno === 'EACCES') {

@@ -3,7 +3,7 @@ import fs from 'fs';
 import utils from "./utils.js";
 
 const printerConfig = utils.getConfig().printing || { };
-const nodePrinter = printerConfig.enabled && !printerConfig.simulate ? require('printer') : null;
+const nodePrinter = null // printerConfig.enabled && !printerConfig.simulate ? require('printer') : null;
 
 class Printer {
     constructor() {

@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import Backend from "i18next-node-fs-backend";
+import Backend from "i18next-fs-backend";
 
 class TranslationService {
     constructor() {
